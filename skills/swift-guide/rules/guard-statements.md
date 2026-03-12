@@ -15,7 +15,8 @@ logic in the successful case. In the second example without `guard`, the main
 logic is buried at an arbitrary nesting level and the thrown errors are
 separated from their conditions by a great distance.
 
-~~~ swift
+**GOOD**
+```swift
 func discombobulate(_ values: [Int]) throws -> Int {
   guard let first = values.first else {
     throw DiscombobulationError.arrayWasEmpty
@@ -30,10 +31,10 @@ func discombobulate(_ values: [Int]) throws -> Int {
   }
   return result
 }
-~~~
-{:.good}
+```
 
-~~~ swift
+**BAD**
+```swift
 func discombobulate(_ values: [Int]) throws -> Int {
   if let first = values.first {
     if first >= 0 {
@@ -49,8 +50,7 @@ func discombobulate(_ values: [Int]) throws -> Int {
     throw DiscombobulationError.arrayWasEmpty
   }
 }
-~~~
-{:.bad}
+```
 
 A `guard`-`continue` statement can also be useful in a loop to avoid increased
 indentation when the entire body of the loop should only be executed in some
