@@ -38,7 +38,8 @@ provide bookmarks in the source window's navigation bar. (Likewise,
 `// MARK: - `, written with a hyphen before the description, causes Xcode to
 insert a divider before the menu item.) For example,
 
-~~~ swift
+**GOOD**
+```swift
 class MovieRatingViewController: UITableViewController {
 
   // MARK: - View controller lifecycle methods
@@ -61,8 +62,7 @@ class MovieRatingViewController: UITableViewController {
     // ...
   }
 }
-~~~
-{:.good}
+```
 
 ### Overloaded Declarations
 

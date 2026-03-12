@@ -8,7 +8,7 @@ Skills follow the [Agent Skills](https://agentskills.io/) format.
 
 ### pyguide
 
-Google Python Style Guide implementation guidelines. Contains 36 rules across 21 categories, covering both Python Language Rules (Section 2) and Python Style Rules (Section 3).
+Google Python Style Guide implementation guidelines. Contains 36 rules covering both Python Language Rules (Section 2) and Python Style Rules (Section 3).
 
 **Use when:**
 - Writing new Python code
@@ -16,45 +16,28 @@ Google Python Style Guide implementation guidelines. Contains 36 rules across 21
 - Refactoring existing Python code
 - Setting up Python projects with linting and type checking
 
-**Section 2: Python Language Rules**
-- Lint
-- Imports & Packages
-- Exceptions
-- Mutable Global State
-- Nested/Local/Inner Classes and Functions
-- Comprehensions & Generator Expressions
-- Default Iterators and Operators
-- Generators
-- Lambda Functions
-- Conditional Expressions
-- Default Argument Values
-- Properties
-- True/False Evaluations
-- Lexical Scoping
-- Function and Method Decorators
-- Threading
-- Power Features
-- Modern Python: from __future__ imports
-- Type Annotated Code
+**Categories:**
+- Python Language Rules: Lint, Imports, Packages, Exceptions, Global State, Nested Functions, Comprehensions, Generators, Lambdas, and more
+- Python Style Rules: Formatting, Naming, Comments, Strings, Type Annotations, and more
 
-**Section 3: Python Style Rules**
-- Semicolons
-- Line length
-- Parentheses
-- Indentation
-- Blank Lines
-- Whitespace
-- Comments and Docstrings
-- Strings
-- Files, Sockets, and similar Stateful Resources
-- TODO Comments
-- Imports formatting
-- Statements
-- Getters and Setters
-- Naming
-- Main
-- Function length
-- Type Annotations
+### swift-guide
+
+Swift Style Guide implementation guidelines based on SwiftLint and Google's Swift style guide. Contains 35 rules covering code organization, naming, types, and best practices.
+
+**Use when:**
+- Writing new Swift code
+- Reviewing Swift code for style and correctness
+- Refactoring existing Swift code
+- Setting up iOS/macOS projects with SwiftLint
+
+**Categories:**
+- Source File Basics: File structure, imports, comments
+- Formatting: Indentation, braces, whitespace, line wrapping
+- Naming: Conventions, type names, function names
+- Types: Enums, optionals, tuples, custom operators
+- Control Flow: Loops, switch statements, guard statements
+- Properties & Methods: Access control, initializers, attributes
+- Error Handling: Error types, propagation
 
 ## Installation
 
@@ -76,11 +59,17 @@ Review this Python code for style issues
 ```
 Help me add type annotations to this Python file
 ```
+```
+Write Swift code following style guide
+```
+```
+Review this Swift code for style issues
+```
 
 ## Skill Structure
 
 Each skill contains:
-- `SKILLS.md` - Instructions for the agent
+- `SKILLS.md` or `SKILL.md` - Instructions for the agent
 - `rules/` - Individual rule files with detailed explanations and examples
 
 ## License
