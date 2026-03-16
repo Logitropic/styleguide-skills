@@ -20,6 +20,25 @@ Google Python Style Guide implementation guidelines. Contains 36 rules covering 
 - Python Language Rules: Lint, Imports, Packages, Exceptions, Global State, Nested Functions, Comprehensions, Generators, Lambdas, and more
 - Python Style Rules: Formatting, Naming, Comments, Strings, Type Annotations, and more
 
+### tsguide
+
+Google TypeScript Style Guide implementation guidelines. Contains 46 rules covering source file basics, imports and exports, language features, classes and functions, naming conventions, the type system, and documentation.
+
+**Use when:**
+- Writing new TypeScript code
+- Reviewing TypeScript code for style and correctness
+- Refactoring existing TypeScript code
+- Setting up TypeScript projects with linting and type checking
+
+**Categories:**
+- Source File Basics: File encoding, copyright, file overview comments
+- Imports & Exports: ES6 imports, named exports, type imports
+- Language Features: Variables, arrays, objects, control flow, decorators
+- Classes & Functions: Class definitions, method decorators, function declarations
+- Naming: Identifiers, naming conventions
+- Type System: Type inference, structural types, generics, wrapper types
+- Documentation: JSDoc comments, parameter documentation
+
 ### swift-guide
 
 Swift Style Guide implementation guidelines based on SwiftLint and Google's Swift style guide. Contains 35 rules covering code organization, naming, types, and best practices.
@@ -58,6 +77,15 @@ Review this Python code for style issues
 ```
 ```
 Help me add type annotations to this Python file
+```
+```
+Write TypeScript code following Google style guide
+```
+```
+Review this TypeScript code for style issues
+```
+```
+Help me add JSDoc comments to this TypeScript file
 ```
 ```
 Write Swift code following style guide
